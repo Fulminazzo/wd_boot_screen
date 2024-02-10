@@ -1,0 +1,50 @@
+[Plymouth Theme]
+Name=Watch Dogs
+Description=Unofficial theme of Watch Dogs for Plymouth.
+ModuleName=two-step
+
+[two-step]
+ImageDir=/usr/share/plymouth/themes/watch_dogs
+Transition=none
+TransitionDuration=0.0
+DialogHorizontalAlignment=.5
+DialogVerticalAlignment=.682
+TitleHorizontalAlignment=.5
+TitleVerticalAlignment=.382
+MessageBelowAnimation=true
+
+[boot-up]
+UseEndAnimation=true
+_Title=Installing Updates...
+_SubTitle=Hey this should work!
+
+[shutdown]
+UseEndAnimation=false
+_Title=Installing Updates...
+_SubTitle=Hey this should work!
+
+[reboot]
+UseEndAnimation=false
+_Title=Installing Updates...
+_SubTitle=Hey this should work!
+
+[updates]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+_Title=Installing Updates...
+_SubTitle=Do not turn off your computer
+
+[system-upgrade]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+_Title=Upgrading System...
+_SubTitle=Do not turn off your computer
+
+[firmware-upgrade]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+_Title=Upgrading Firmware...
+_SubTitle=Do not turn off your computer
