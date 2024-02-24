@@ -1,10 +1,10 @@
 [Plymouth Theme]
-Name=Watch Dogs
-Description=Unofficial theme of Watch Dogs for Plymouth.
+Name=WD Boot Screen
+Description=Official theme for the wd_boot_screen. Check more info on GitHub: https://www.github.com/Fulminazzo/wd_boot_screen
 ModuleName=two-step
 
 [two-step]
-ImageDir=/usr/share/plymouth/themes/watch_dogs
+ImageDir=/usr/share/plymouth/themes/wd_boot_screen
 Transition=none
 TransitionDuration=0.0
 DialogHorizontalAlignment=.5
@@ -15,18 +15,12 @@ MessageBelowAnimation=true
 
 [boot-up]
 UseEndAnimation=true
-_Title=Installing Updates...
-_SubTitle=Hey this should work!
 
 [shutdown]
 UseEndAnimation=false
-_Title=Installing Updates...
-_SubTitle=Hey this should work!
 
 [reboot]
 UseEndAnimation=false
-_Title=Installing Updates...
-_SubTitle=Hey this should work!
 
 [updates]
 SuppressMessages=true
