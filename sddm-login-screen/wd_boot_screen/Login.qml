@@ -78,7 +78,7 @@ GridLayout {
             visible: grid.newUser ? true : false
                 opacity: visible ? 1 : 0
                 Behavior on opacity { NumberAnimation { duration: 500 } }
-            font.pointSize: 9
+            font.pointSize: 48
             font.bold: false
             font.italic: false
             onSelectMe: grid.userSelected()
