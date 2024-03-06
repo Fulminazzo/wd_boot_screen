@@ -133,14 +133,15 @@ Skel {
 
             //i18nd : https://doc.qt.io/qt-5/qtquick-internationalization.html
             Component.onCompleted: {
-                switch (Qt.locale().name.substring(0,2)) {
-                    case "en": switchButton.text = "Different User"; break;
-                    case "fr": switchButton.text = "Utilisateur différent"; break;
-                    case "es": switchButton.text = "Usuario diferente"; break;
-                    case "it": switchButton.text = "Utente diverso"; break;
-                    case "de": switchButton.text = "Anderer Benutzer"; break;
-                    default: switchButton.text = "Different User";
-                }
+            //     switch (Qt.locale().name.substring(0,2)) {
+            //         case "en": switchButton.text = "Different User"; break;
+            //         case "fr": switchButton.text = "Utilisateur différent"; break;
+            //         case "es": switchButton.text = "Usuario diferente"; break;
+            //         case "it": switchButton.text = "Utente diverso"; break;
+            //         case "de": switchButton.text = "Anderer Benutzer"; break;
+            //         default: switchButton.text = "Different User";
+            //     }
+                switchButton.text = " ";
             }
         }
     }
