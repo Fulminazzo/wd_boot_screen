@@ -4,6 +4,7 @@ Encoding=UTF-8
 Keywords=Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;
 Name=WD Boot Screen
 Type=Service
+Website=https://github.com/fulminazzo/wd_boot_screen
 
 X-KDE-ServiceTypes=Plasma/LookAndFeel
 X-KDE-ParentApp=
