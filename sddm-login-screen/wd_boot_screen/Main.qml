@@ -68,7 +68,7 @@ Skel {
             Layout.fillHeight: false
             Layout.preferredHeight: 28
             Layout.rightMargin: 4
-            visible: true
+            visible: false
         }
         KeyboardButton {
             id: keyboardButton
@@ -77,7 +77,7 @@ Skel {
             Layout.fillHeight: false
             Layout.preferredHeight: 28
             Layout.rightMargin: 4
-            visible: true
+            visible: false
         }
     }
 
@@ -177,6 +177,7 @@ Skel {
         anchors.margins: 4
         LayoutMirroring.enabled: isMirror
         source: "components/Battery.qml"
+        visible: false
     }
 
     // Virtual Keyboard (opt).
