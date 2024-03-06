@@ -30,7 +30,7 @@ Item {
         id: colorBG
         anchors.fill: parent
         visible: isColor
-        color: background.color
+        color: "#010101"
     }
 
     Image {
