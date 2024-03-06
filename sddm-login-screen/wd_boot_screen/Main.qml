@@ -32,8 +32,6 @@ Skel {
 
     menu: Item { id: menu; anchors.fill: parent }
     free: Item { id: free; anchors.fill: parent }
-
-    
     
     // ===================
     // Objects
