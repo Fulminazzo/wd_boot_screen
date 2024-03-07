@@ -22,8 +22,9 @@ TextField {
     font.bold: conf("text.bold")
     Component.onCompleted: if (conf("text.font") != "") font.family = conf("text.font")
 
-    passwordMaskDelay: 500
-    passwordCharacter: "\u25cf" //●
+    passwordMaskDelay: 125
+    // passwordCharacter: "\u25cf" //●
+    passwordCharacter: "\u00D7" //×
 
     Row {
         id: row
