@@ -4,6 +4,7 @@ Description=SDDM login theme for wd_boot_screen
 Type=sddm-theme
 Author=Fulminazzo
 Version=1.0
+Screenshot=preview.png
 MainScript=Main.qml
 ConfigFile=theme.conf
 TranslationsDirectory=translations
