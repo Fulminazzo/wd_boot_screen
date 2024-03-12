@@ -30,8 +30,6 @@ sudo cp -r sddm-login-screen/$PROJECT_NAME $LOGIN_THEMES
 
 found=0
 
-test ! -e $LOGIN_DIR && sudo mkdir -p $LOGIN_DIR
-
 if [ -e $LOGIN_CONFIG ]; then
   sudo cp $LOGIN_CONFIG $LOGIN_CONFIG.old
   sudo chmod 777 $LOGIN_CONFIG
@@ -45,6 +43,9 @@ if [ -e $LOGIN_CONFIG ]; then
     fi
   done < $LOGIN_CONFIG.old
   sudo chmod 600 $LOGIN_CONFIG
+else
+  sudo mkdir -p $LOGIN_DIR
+  sudo touch $LOGIN_CONFIG
 fi
 
 if [ $found == 0 ]; then
