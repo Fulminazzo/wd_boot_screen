@@ -59,6 +59,7 @@ echo "Successfully installed login screen"
 # Install splash screen
 echo "Installing splash screen"
 
+test ! -e $SPLASH_THEMES && mkdir $SPLASH_THEMES
 sudo rm -r $SPLASH_THEMES$PROJECT_NAME
 sudo cp -r plasma-splash-screen/$PROJECT_NAME $SPLASH_THEMES
 
