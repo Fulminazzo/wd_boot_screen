@@ -5,7 +5,8 @@ sudo echo "Obtained root privileges!"
 
 PLYMOUTH_THEMES=/usr/share/plymouth/themes/
 LOGIN_THEMES=/usr/share/sddm/themes/
-LOGIN_CONFIG=/etc/sddm.conf.d/kde_settings.conf
+LOGIN_DIR=/etc/sddm.conf.d
+LOGIN_CONFIG=$LOGIN_DIR/kde_settings.conf
 
 SPLASH_THEMES=~/.local/share/plasma/look-and-feel/
 SPLASH_CONFIG=~/.config/ksplashrc
@@ -28,6 +29,8 @@ sudo rm -r $LOGIN_THEMES$PROJECT_NAME
 sudo cp -r sddm-login-screen/$PROJECT_NAME $LOGIN_THEMES
 
 found=0
+
+test ! -e $LOGIN_DIR && sudo mkdir "$LOGIN_DIR"
 
 if [ -e $LOGIN_CONFIG ]; then
   sudo cp $LOGIN_CONFIG $LOGIN_CONFIG.old
