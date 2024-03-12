@@ -30,7 +30,7 @@ sudo cp -r sddm-login-screen/$PROJECT_NAME $LOGIN_THEMES
 
 found=0
 
-test ! -e $LOGIN_DIR && sudo mkdir "$LOGIN_DIR"
+test ! -e $LOGIN_DIR && sudo mkdir -p $LOGIN_DIR
 
 if [ -e $LOGIN_CONFIG ]; then
   sudo cp $LOGIN_CONFIG $LOGIN_CONFIG.old
@@ -59,7 +59,7 @@ echo "Successfully installed login screen"
 # Install splash screen
 echo "Installing splash screen"
 
-test ! -e $SPLASH_THEMES && mkdir $SPLASH_THEMES
+test ! -e $SPLASH_THEMES && mkdir -p $SPLASH_THEMES
 sudo rm -r $SPLASH_THEMES$PROJECT_NAME
 sudo cp -r plasma-splash-screen/$PROJECT_NAME $SPLASH_THEMES
 
