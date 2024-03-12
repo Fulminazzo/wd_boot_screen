@@ -63,7 +63,11 @@ test ! -e $SPLASH_THEMES && mkdir $SPLASH_THEMES
 sudo rm -r $SPLASH_THEMES$PROJECT_NAME
 sudo cp -r plasma-splash-screen/$PROJECT_NAME $SPLASH_THEMES
 
-sudo mv $SPLASH_CONFIG $SPLASH_CONFIG.old
+if [ -e $SPLASH_CONFIG ]; then
+  sudo mv $SPLASH_CONFIG $SPLASH_CONFIG.old
+else
+  touch $SPLASH_CONFIG
+fi
 echo "[KSplash]" >> $SPLASH_CONFIG
 echo "Theme=wd_boot_screen" >> $SPLASH_CONFIG
 
