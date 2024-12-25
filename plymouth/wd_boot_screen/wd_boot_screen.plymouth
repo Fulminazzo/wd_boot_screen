@@ -12,6 +12,8 @@ DialogVerticalAlignment=.682
 TitleHorizontalAlignment=.5
 TitleVerticalAlignment=.382
 MessageBelowAnimation=true
+BackgroundStartColor=0x000000
+BackgroundEndColor=0x000000
 
 [boot-up]
 UseEndAnimation=true
